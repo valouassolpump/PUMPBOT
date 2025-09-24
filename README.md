@@ -1,0 +1,2 @@
+# PUMPBOT
+Assistant ia trading 
