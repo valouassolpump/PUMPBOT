@@ -33,9 +33,9 @@ st.markdown("""
 # Import du dashboard principal
 try:
     # Essayer d'importer le dashboard existant
-    exec(open('professional_avnt_dashboard.py', encoding='utf-8').read())
+    exec(open('CUSTOM_TRADING_DASHBOARD.py', encoding='utf-8').read())
 except FileNotFoundError:
-    st.error("❌ Fichier professional_avnt_dashboard.py introuvable")
+      st.error("❌ Fichier CUSTOM_TRADING_DASHBOARD.py introuvable")
     st.info("📋 Assurez-vous que tous les fichiers sont présents dans le repository GitHub")
 except Exception as e:
     st.error(f"❌ Erreur lors du chargement du dashboard: {e}")
@@ -44,3 +44,4 @@ except Exception as e:
     # Afficher un dashboard de base en cas d'erreur
     st.markdown("## 📊 Dashboard de Base")
     st.success("✅ L'application fonctionne ! Le dashboard principal sera chargé une fois tous les fichiers uploadés.")
+
